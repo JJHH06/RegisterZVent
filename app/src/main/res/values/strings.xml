@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Register ZVent</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_init_button">Iniciar</string>
+    <string name="about_init_screen">Acerca de</string>
+    <string name="home_button">Inicio</string>
+    <string name="registry_result_title">Registro</string>
+    <string name="result_reset_button">Reiniciar</string>
+    <string name="see_guests_result_button_text">Ver invitados</string>
+    <string name="about_app_title">Register Zevent</string>
+    <string name="about_app_content">Register Zevent es una aplicación dedicada a la administración de invitados para todo evento privado.</string>
+    <string name="share">Share</string>
+    <string name="contact">Contacto:</string>
+    <string name="name_contact">Zvent Register App</string>
+    <string name="email_contact">support@zvent.com</string>
+</resources>

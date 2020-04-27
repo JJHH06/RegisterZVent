@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.registerzvent.views.titleFragment"
+        android:label="titleFragment"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_registryFragment"
+            app:destination="@id/registryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registryFragment"
+        android:name="com.example.registerzvent.views.registryFragment"
+        android:label="registryFragment"
+        tools:layout="@layout/fragment_registry">
+        <action
+            android:id="@+id/action_registryFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment"
+            app:popUpTo="@id/registryFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.registerzvent.views.resultsFragment"
+        android:label="resultsFragment"
+        tools:layout="@layout/fragment_results">
+        <action
+            android:id="@+id/action_resultsFragment_to_registryFragment"
+            app:destination="@id/registryFragment"
+            app:popUpTo="@id/titleFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="registeredPeople"
+            app:argType="integer" />
+        <argument
+            android:name="invitedPeople"
+            app:argType="integer" />
+        <argument
+            android:name="invitedSummary"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.registerzvent.views.aboutFragment"
+        android:label="aboutFragment"
+        tools:layout="@layout/fragment_about"/>
+</navigation>
